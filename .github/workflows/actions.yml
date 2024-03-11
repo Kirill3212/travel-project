@@ -1,24 +1,22 @@
-name: Verification Linter
-run-name: ${{ github.actor }} is testing out GitHub Actions.
+name: GitHub Actions
+run-name: run CI 🚀
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   pull_request:
-    branches:
-      - master
+    branches: [master]
 jobs:
   init:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
     steps:
       - uses: actions/checkout@v4
-      - name: Staring Node.js ${{ matrix.node-version}}
+      - name: Staring Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version}}
+          node-version: ${{ matrix.node-version }}
       - name: install modules
         run: npm install
       - name: build project
