@@ -16,7 +16,7 @@ const Home = () => {
       {HOME_CARDS.map((homeCard, index) => (
         <HomeCard
           key={index}
-          flexDir={homeCard.flexDir}
+          flexDir={homeCard.flexDir as 'row' | 'row-reverse' | 'column' | 'column-reverse'}
           imgSrc={homeCard.imgSrc}
           header={homeCard.header}
           txt={homeCard.txt}
