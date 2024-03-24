@@ -1,0 +1,100 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/rounding';
+
+.btn {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+// SIZE: xs, s, m, l
+.btn-size {
+    &_xs {
+        padding: 4px 16px;
+        font-size: map-get($font-size, XS);
+        line-height: map-get($line-height, XS);
+        font-weight: map-get($font-weight, XS);
+    }
+
+    &_s {
+        padding: 4px 16px;
+        font-size: map-get($font-size, S);
+        line-height: map-get($line-height, S);
+        font-weight: map-get($font-weight, M);
+    }
+
+    &_m {
+        padding: 12px 24px;
+        font-size: map-get($font-size, S);
+        line-height: map-get($line-height, S);
+        font-weight: map-get($font-weight, SB);
+    }
+
+    &_l {
+        padding: 12px 24px;
+        font-size: map-get($font-size, L);
+        line-height: map-get($line-height, M);
+        font-weight: map-get($font-weight, B);
+    }
+}
+
+// WIDTH: auto, max
+.btn-width {
+    &_auto {
+        width: auto;
+    }
+
+    &_max {
+        width: 100%;
+    }
+}
+
+// THEME: primary (blue and gold), secondary (purple and yellow), third (green and yellow)
+.theme {
+    &_primary {
+        background-color: $primary_blue;
+        color: $primary_gold;
+        border-radius: $borderRadiusM;
+        transition: background-color 300ms ease-out;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $secondary_blue;
+            color: $secondary_gold;
+        }
+
+        // &:active {
+        //     background-color: ;
+        // }
+    }
+
+    &_secondary {
+        background-color: $primary_purple;
+        color: $primary_yellow;
+        border-radius: $borderRadiusM;
+        transition: background-color 300ms ease-out;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $secondary_purple;
+            color:$secondary_gold;
+        }
+
+        // &:active {
+        //     background-color: ;
+        // }
+    }
+
+    &_third {
+        background-color: $primary_green;
+            color: $primary_yellow;
+            border-radius: $borderRadiusM;
+            transition: background-color 300ms ease-out;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $secondary_green;
+            color: $secondary_gold;
+        }
+    }
+}

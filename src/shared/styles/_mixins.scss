@@ -1,0 +1,41 @@
+@mixin flexAbsoluteCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumnCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin flexSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexSpaceAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flexCenterEnd {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@mixin flexCenterStart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin absoluteVerticalAndHorizontalCenter() {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

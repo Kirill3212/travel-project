@@ -1,0 +1,60 @@
+    @import '../../styles/colors';
+    @import '../../styles/fonts';
+    
+    .link{
+       cursor: pointer;
+    }
+
+    // SIZE: xs, s, m, l
+    .link_size {
+        &_xs {
+            font-size: map-get($font-size, XS);
+            line-height: map-get($line-height, XS);
+        }
+            
+        &_s {
+            font-size: map-get($font-size, S);
+            line-height: map-get($line-height, S);
+        }
+            
+        &_m {
+            font-size: map-get($font-size, M);
+            line-height: map-get($line-height, M);
+        }
+            
+        &_l {
+            font-size: map-get($font-size, L);
+            line-height: map-get($line-height, L);
+        }
+    }   
+     
+    // COLOR: blue, green, purple, gold, orange, white
+    .link_color {
+        &_blue {
+            color: $primary_blue;
+        }
+    
+        &_green {
+            color: $primary_green;
+        }
+    
+        &_purple {
+            color: $primary_purple;
+        }
+    
+        &_gold {
+            color: $primary_gold;
+        }
+    
+        &_orange {
+            color: $primary_orange;
+        }
+    
+        &_white {
+            color: $primary_lightgrey;
+        }
+    }
+
+
+
+

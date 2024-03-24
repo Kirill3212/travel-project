@@ -1,0 +1,32 @@
+@import '../../shared//styles/index.scss';
+
+.userNavbar {
+    width: 100%;
+    padding: 8px;
+    @include flexSpaceBetween;
+}
+
+.logo {
+    @include flexSpaceBetween;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-top: 3px;
+    cursor: pointer;
+    width: 160px;
+    
+    img {
+        width: 50px;
+    }
+}
+
+.navLinksContainer {
+    @include flexAbsoluteCenter;
+            
+    .navLinks {
+        @include flexAbsoluteCenter;
+            
+            li {
+                margin-right: 25px;
+            }
+    }
+}
