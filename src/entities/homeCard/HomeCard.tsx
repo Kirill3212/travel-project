@@ -1,18 +1,9 @@
 import { FC } from 'react';
-import styles from './HomeCard.module.scss';
+import styles from './homeCard.module.scss';
 import { Button, Text } from '../../shared/ui';
+import { HomeCardType } from '../../types/types';
 
-interface HomeCardProps {
-  flexDir: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-  alterativeTxt: string;
-  btnHeader: string;
-  btnTxt: string;
-  header: string;
-  imgSrc: string;
-  txt: string;
-}
-
-const HomeCard: FC<HomeCardProps> = ({
+export const HomeCard: FC<HomeCardType> = ({
   flexDir,
   alterativeTxt,
   btnHeader,
@@ -23,9 +14,11 @@ const HomeCard: FC<HomeCardProps> = ({
 }) => {
   return (
     <div className={styles.homeCard} style={{ flexDirection: flexDir }}>
-      <img src={imgSrc} alt={alterativeTxt} className={styles.image} />
-      <div className={styles.textBlock}>
-        <div className={styles.header}>
+      <img src={imgSrc} alt={alterativeTxt} className={styles.homeCard_image} />
+
+      {/* Text Block */}
+      <div className={styles.homeCard_textBlock}>
+        <div className={styles.homeCard_textBlock_header}>
           <Text tag={'h1'} weight={'semibold'} size={'l'} color={'blue'}>
             {header}
           </Text>
@@ -33,11 +26,11 @@ const HomeCard: FC<HomeCardProps> = ({
         <Text tag={'p'} align={'justify'}>
           {txt}
         </Text>
-        <div className={styles.btnBlock}>
+        <div className={styles.homeCard_textBlock_btnSection}>
           <Text tag={'h2'} weight={'medium'} size={'m'}>
             {btnHeader}
           </Text>
-          <div className={styles.btn}>
+          <div className={styles.homeCard_textBlock_btnSection_btn}>
             <Button
               size='s'
               type='button'
@@ -54,4 +47,4 @@ const HomeCard: FC<HomeCardProps> = ({
   );
 };
 
-export default HomeCard;
+

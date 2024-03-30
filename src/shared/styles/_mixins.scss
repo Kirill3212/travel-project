@@ -1,13 +1,23 @@
-@mixin flexAbsoluteCenter {
+// Column (Vertical)
+@mixin flexColumnCenter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@mixin flexColumnCenter {
+@mixin flexColumnSpaceBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// (Horizontal)
+@mixin flexAbsoluteCenter {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
 @mixin flexSpaceBetween {
@@ -34,7 +44,9 @@
     justify-content: center;
 }
 
+// Absolute Center 
 @mixin absoluteVerticalAndHorizontalCenter() {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

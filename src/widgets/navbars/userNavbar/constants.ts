@@ -1,4 +1,4 @@
-import { PATH_PAGE } from '../../app/paths';
+import { PATH_PAGE } from '../../../app/paths';
 
 export const NAV_LINKS = [
   { path: PATH_PAGE.discover, name: 'Discover' },

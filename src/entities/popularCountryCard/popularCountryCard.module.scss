@@ -1,0 +1,47 @@
+@import '../../shared//styles/index.scss';
+
+.countryCard{
+    @include flexColumnSpaceBetween;
+    background-color: $primary_lightgrey;
+    border-radius: $borderRadiusXL;
+    width: 390px;
+    height: 440px;
+    margin: 10px;
+    margin-bottom: 60px;
+
+    &_header {
+        @include flexSpaceBetween;
+        width: 100%;
+        background-color: $secondary_lightgrey;
+        border-top-left-radius: $borderRadiusM;
+        border-top-right-radius: $borderRadiusM;
+        margin-bottom: 15px;
+
+        &_text{
+            padding: 5px;
+            margin-left: 5px;
+        }
+
+        &_flag{
+            @include flexAbsoluteCenter;
+            border: 1px solid $secondary_lightgrey;
+            border-radius: 50%;
+            margin-right: 13px;
+        }
+    }
+
+    &_body{
+        &_image{
+            width: 390px;
+            height: 250px;
+            border-radius: $borderRadiusS;
+        }
+
+        &_expression{
+            margin: 0 auto;
+            margin: 15px 0;
+            text-align: center;
+            color: $primary_purple;
+        }
+    }
+}

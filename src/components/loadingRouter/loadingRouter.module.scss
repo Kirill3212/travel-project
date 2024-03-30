@@ -1,0 +1,18 @@
+@import '../../shared/styles/index.scss';
+
+.loadingRouter {
+    @include absoluteVerticalAndHorizontalCenter;
+    @include flexColumnCenter;
+    width: 300px;
+    height: 300px;
+
+    &_image {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    &_message {
+        margin-top: 13px;
+    }
+}

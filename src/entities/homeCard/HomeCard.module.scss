@@ -1,42 +1,43 @@
 @import '../../shared//styles/index.scss';
 
 .homeCard {
-    @include flexAbsoluteCenter;
     // border-left: 6px solid $primary_purple;
     // border-right: 6px solid $primary_purple;
     // background-color: $primary_lightgrey;
+    @include flexAbsoluteCenter;
     border-radius: $borderRadiusL;
     padding: 40px;
     width: 1250px;
     margin: 0 auto;
     margin-bottom: 50px;
-}
 
-.image{
-    width: 350px;
-}
+    &_image {
+        width: 350px;
+    }
 
-.textBlock {
-    width: 580px;
-    min-width: 580px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
+    &_textBlock {
+        width: 580px;
+        min-width: 580px;
+        margin-left: 50px;
+        margin-right: 50px;
 
-.header{
-    @include flexAbsoluteCenter;
-    margin-bottom: 10px;
-}
+        &_header {
+            @include flexAbsoluteCenter;
+            margin-bottom: 10px;
+        }
 
-.btnBlock{
-    @include flexCenterStart;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: $primary_lightgrey;
-    border-bottom-left-radius: $borderRadiusL;
-    border-bottom-right-radius: $borderRadiusL;
-}
+        &_btnSection {
+            @include flexCenterStart;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: $primary_lightgrey;
+            border-bottom-left-radius: $borderRadiusL;
+            border-bottom-right-radius: $borderRadiusL;
 
-.btn {
-    margin-left: 20px;
+            &_btn {
+                margin-left: 20px;
+            }
+        }
+    }
+
 }

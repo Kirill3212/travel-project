@@ -1,7 +1,7 @@
-import styles from './Header.module.scss';
+import styles from './header.module.scss';
 
-import UserNavbar from '../userNavbar/UserNavbar';
-import GuestNavbar from '../guestNavbar/GuestNavbar';
+import UserNavbar from '../navbars/userNavbar/UserNavbar';
+import GuestNavbar from '../navbars/guestNavbar/GuestNavbar';
 
 const Header = () => {
   const auth = true;

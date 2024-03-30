@@ -1,0 +1,24 @@
+@import '../../shared//styles/index.scss';
+
+.popularCountriesList{
+    @include flexColumnCenter;
+
+    &_header {
+        @include flexCenterEnd;
+        margin-bottom: 50px;
+    }
+    
+    &_headerLogo {
+        width: 50px;
+        padding-bottom: 5px;
+        margin-left: 15px;
+    }
+
+    &_cardsList {
+        @include flexSpaceBetween;
+        flex-wrap: wrap;
+        width:  1250px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}

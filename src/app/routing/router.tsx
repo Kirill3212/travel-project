@@ -6,7 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route } from 'react-rout
 import { Layout } from '../Layout/Layout';
 
 // Helpers
-import Loading from '../../components/Loading/Loading';
+import LoadingRouter from '../../components/loadingRouter/LoadingRouter';
 
 // Pages
 const Home = lazy(() => import('../../pages/home/Home'));
@@ -20,7 +20,7 @@ export const router = createBrowserRouter(
     <Route
       path='/'
       element={
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<LoadingRouter />}>
           <Layout />
         </Suspense>
       }

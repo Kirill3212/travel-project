@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 import { Link as LinkTo } from 'react-router-dom';
 import classNames from 'classnames';
-import styles from './Link.module.scss';
+import styles from './link.module.scss';
 
 interface LinkProps {
   to: string;

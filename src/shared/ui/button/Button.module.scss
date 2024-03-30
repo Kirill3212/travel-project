@@ -4,7 +4,8 @@
 
 .btn {
     cursor: pointer;
-    border: 2px solid black;
+    border: none;
+    // border: 2px solid black;
 }
 
 // SIZE: xs, s, m, l
@@ -60,12 +61,7 @@
         &:hover,
         &:focus-visible {
             background-color: $secondary_blue;
-            color: $secondary_gold;
         }
-
-        // &:active {
-        //     background-color: ;
-        // }
     }
 
     &_secondary {
@@ -77,12 +73,7 @@
         &:hover,
         &:focus-visible {
             background-color: $secondary_purple;
-            color:$secondary_gold;
         }
-
-        // &:active {
-        //     background-color: ;
-        // }
     }
 
     &_third {
@@ -94,7 +85,6 @@
         &:hover,
         &:focus-visible {
             background-color: $secondary_green;
-            color: $secondary_gold;
         }
     }
 }

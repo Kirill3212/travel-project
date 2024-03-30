@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes, createElement, ReactNode } from 'react';
 import classNames from 'classnames';
-import styles from './Text.module.scss';
+import styles from './text.module.scss';
 
 interface TextProps extends HTMLAttributes<HTMLElement> {
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';

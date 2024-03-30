@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import styles from './Button.module.scss';
+import styles from './button.module.scss';
 
 interface ButtonProps {
   children: ReactNode;

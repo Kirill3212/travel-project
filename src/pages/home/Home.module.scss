@@ -6,17 +6,3 @@
     min-width: 1050px;
     margin-top: 10px;
 }
-
-.header {
-    @include flexCenterEnd;
-    margin-bottom: 20px;
-}
-
-.headerText {
-    color: $secondary_green;
-}
-
-.headerLogo {
-    width: 60px;
-    padding-bottom: 7px;
-}

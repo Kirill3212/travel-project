@@ -1,0 +1,15 @@
+@import '../../shared/styles/index.scss';
+
+.homeCardsList {
+    @include flexColumnCenter;
+
+    &_header {
+        @include flexCenterEnd;
+        margin-bottom: 20px;
+    }
+    
+    &_headerLogo {
+        width: 60px;
+        padding-bottom: 7px;
+    }
+}

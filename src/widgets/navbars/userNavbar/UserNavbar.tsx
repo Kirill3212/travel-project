@@ -1,7 +1,7 @@
-import styles from './UserNavbar.module.scss';
-import logo from '../../assets/logo.png';
-import { Link, Text } from '../../shared/ui';
-import { PATH_PAGE } from '../../app/paths';
+import styles from './userNavbar.module.scss';
+import logo from '../../../assets/logo.png';
+import { Link, Text } from '../../../shared/ui';
+import { PATH_PAGE } from '../../../app/paths';
 import { NAV_LINKS } from './constants';
 
 const UserNavbar = () => {
