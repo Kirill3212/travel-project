@@ -5,7 +5,7 @@
     max-width: 1700px;
     min-height: 100vh;
     margin: 0 auto;
-    @include flexColumnCenter
+    @include flexColumnCenter;
 }
 
 .outlet{
