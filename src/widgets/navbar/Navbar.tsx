@@ -1,12 +1,12 @@
 import styles from './navbar.module.scss';
-import lottery from '../../shared/icons/lottery.svg';
 import logo from '../../assets/general/logo.png';
+import lottery from '../../shared/icons/lottery.svg';
 import { PATH_PAGE } from '../../app/paths';
-import { NAV_LINKS_USER, NAV_LINKS_GUEST } from './constants';
+import { NAV_LINKS_USER, NAV_LINKS_GUEST, NAV_LINK_DISCOVER } from './constants';
 import { Link, Text } from '../../shared/ui/index';
 
 const Navbar = () => {
-  const auth = false;
+  const auth = true;
 
   return (
     <div className={styles.userNavbar}>
@@ -35,6 +35,28 @@ const Navbar = () => {
           {/* User Navbar */}
           {auth && (
             <>
+
+            {/* Dropdown menu Discover */}
+              <div className={styles.dropdown}>
+                <Link to={NAV_LINK_DISCOVER.discover.path} size={'m'} color={'purple'}>
+                  {NAV_LINK_DISCOVER.discover.name}
+                </Link>
+                <div className={styles.menu}>
+                  <Link to='' color='purple'>
+                    {NAV_LINK_DISCOVER.allPlaces}
+                  </Link>
+                  <Link to='' color='purple'>
+                    {NAV_LINK_DISCOVER.latestPlaces}
+                  </Link>
+                  <Link to='' color='purple'>
+                    {NAV_LINK_DISCOVER.mostPopular}
+                  </Link>
+                  <Link to='' color='purple'>
+                    {NAV_LINK_DISCOVER.random}
+                  </Link>
+                </div>
+              </div>
+
               {NAV_LINKS_USER.map((navLink) => (
                 <li key={navLink.name}>
                   <Link to={navLink.path} size={'m'} color={'purple'}>
