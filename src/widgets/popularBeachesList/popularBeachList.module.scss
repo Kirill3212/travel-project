@@ -1,0 +1,77 @@
+@import '../../shared//styles/index.scss';
+
+
+.popularBeachesListContainer {
+    @include flexColumnCenter;
+}
+
+.popularBeachesList {
+    @include flexColumnCenter;
+    width: 1250px;
+    margin: 0 auto;
+
+    // Header
+    &_header {
+        width: 100%;
+        @include flexSpaceBetween;
+        background-image: linear-gradient(to right, #ffdf2c, #ffd91c, #f4cb1f, #ebbc10, #dba800);
+        border-bottom-left-radius: $borderRadiusML;
+        border-top-left-radius: $borderRadiusML;
+        margin-bottom: 50px;
+        padding-right: 0 30px;
+        padding-left: 50px;
+
+        &_subHeaderOne {
+            position: relative;  
+            @include flexSpaceBetween;
+
+            &_arrow {
+                color: $primary-purple;
+                position: relative;
+                top: 40px;
+                left: 10px;
+            }
+        }
+
+        &_subHeaderTwo {
+            @include flexSpaceBetween;
+            height: 100%;
+            background-color: white;
+            padding-left: 20px;
+            border-bottom-left-radius: 80px;
+            border-top-left-radius: 80px;
+
+            &_title { 
+                width: 450px;
+                text-align: center;
+            }
+
+            &_logo {
+                width: 350px;
+                border-top-right-radius: $borderRadiusML;
+                border-bottom-right-radius: $borderRadiusML;
+            }
+        }
+    }
+
+    &_headerLogo {
+        width: 50px;
+        padding-bottom: 5px;
+        margin-left: 15px;
+    }
+
+    &_cardsList {
+        @include flexSpaceBetween;
+        flex-wrap: wrap;
+        width: 1250px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    // Body (list of beaches)
+    &_body {
+        @include flexSpaceBetween;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

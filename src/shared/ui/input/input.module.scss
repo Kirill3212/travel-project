@@ -1,0 +1,58 @@
+@import '../../../shared/styles/index.scss';
+
+.inputSVGContainer {
+    @include flexSpaceBetween;
+    gap: 5px;
+}
+
+.input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: $borderRadiusS;
+}
+
+.input-width {
+    &_auto {
+        width: auto;
+    }
+
+    &_max {
+        width: 100%;
+    }
+}
+
+.size {
+    &_s {
+        padding: 4px 16px;
+        font-size: map-get($font-size, S);
+        line-height: map-get($line-height, S);
+        font-weight: map-get($font-weight, S);
+    }
+        
+    &_m {
+        padding: 8px 20px;
+        font-size: map-get($font-size, M);
+        line-height: map-get($line-height, M);
+        font-weight: map-get($font-weight, M);
+    }
+        
+    &_l {
+        padding: 12px 24px;
+        font-size: map-get($font-size, L);
+        line-height: map-get($line-height, L);
+        font-weight: map-get($font-weight, SB);
+    }
+}
+
+.theme {
+    &_standart {
+        background-color: $primary_lightgrey;
+        border: 3px solid $primary_darkgrey;
+    }
+
+    &_primary {
+        background-color: $primary_purple;
+        border: 3px solid $primary_darkgrey;
+    }
+}

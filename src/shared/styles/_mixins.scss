@@ -13,6 +13,18 @@
     align-items: center;
 }
 
+@mixin flexColumnStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@mixin flexColumnEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 // (Horizontal)
 @mixin flexAbsoluteCenter {
     display: flex;

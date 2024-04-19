@@ -1,8 +1,9 @@
 import styles from './layout.module.scss';
+import { Header } from '../../widgets/header/Header';
+// Ошибка при билде, хз почему
 
 import { Outlet } from 'react-router-dom';
 
-import Header from '../../widgets/header/Header';
 import Footer from '../../widgets/footer/Footer';
 
 export const Layout = () => {

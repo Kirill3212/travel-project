@@ -1,5 +1,5 @@
 import styles from './userNavbar.module.scss';
-import logo from '../../../assets/logo.png';
+import logo from '../../../assets//general/logo.png';
 import { Link, Text } from '../../../shared/ui';
 import { PATH_PAGE } from '../../../app/paths';
 import { NAV_LINKS } from './constants';
@@ -16,6 +16,7 @@ const UserNavbar = () => {
           </Text>
         </div>
       </Link>
+
       {/* Navigation Links */}
       <div className={styles.navLinksContainer}>
         <ul className={styles.navLinks}>

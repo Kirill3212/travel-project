@@ -149,47 +149,62 @@
     }
     ],
 
-    "popularBeaches": [
-    {
+    "popularBeaches": {
+      "header": {
+        "title": "Popular Beaches",
+        "subTitle": "Spend a Week on the Beach You Have Always Dreamt of",
+        "logo": "src/assets/homeHeaders/homeHeaderMinivanLogo.gif"
+      },
+      "beaches": [
+      {
         "name": "Bondi Beach",
         "location": "Sydney, Australia",
         "description": "Famous for its golden sands and great surfing opportunities.",
         "activities": ["Surfing", "Sunbathing", "Beach volleyball"],
-        "image": "https://example.com/bondi-beach.jpg",
+        "image": "src/assets/popularBeaches/bahamas.jpg",
         "rating": 4.8
-    },
-    {
+      },
+      {
         "name": "Waikiki Beach",
         "location": "Honolulu, Hawaii",
         "description": "Iconic beach known for its clear waters and stunning sunsets.",
         "activities": ["Swimming", "Snorkeling", "Surfing"],
-        "image": "https://example.com/waikiki-beach.jpg",
+        "image": "src/assets/popularBeaches/hawaii.jpg",
         "rating": 4.7
-    },
-    {
+      },
+      {
         "name": "Copacabana Beach",
         "location": "Rio de Janeiro, Brazil",
         "description": "Vibrant beach with a lively atmosphere and beautiful views.",
         "activities": ["Beach soccer", "Samba dancing", "Caipirinha tasting"],
-        "image": "https://example.com/copacabana-beach.jpg",
+        "image": "src/assets/popularBeaches/indonesia.jpg",
         "rating": 4.6
-    },
-    {
+      },
+      {
         "name": "Bora Bora Beach",
         "location": "French Polynesia",
         "description": "Paradise beach surrounded by crystal-clear waters and overwater bungalows.",
         "activities": ["Snorkeling", "Kayaking", "Relaxing in a hammock"],
-        "image": "",
+        "image": "src/assets/popularBeaches/maldives.jpg",
         "rating": 4.9
-    },
-    {
+      },
+      {
         "name": "Anse Source d'Argent",
-        "location": "'La Digue, Seychelles'",
-        "description": "'Stunning beach with unique granite rock formations and turquoise waters.'",
-        "activities": ["Photography", "'Swimming'", "'Sunbathing'"],
-        "image": "'https://example.com/anse-source-dargent.jpg'",
+        "location": "La Digue, Seychelles",
+        "description": "Stunning beach with unique granite rock formations and turquoise waters.",
+        "activities": ["Photography", "Swimming", "Sunbathing"],
+        "image": "src/assets/popularBeaches/spain.jpg",
         "rating": 4.9
-    }
+      },
+      {
+        "name": "Playa El Doradillo",
+        "location": "Mar del Plata, Argentina",
+        "description": "Clear waters and soft sand, popular for whale watching during the winter months.",
+        "activities": ["Whale watching", "Swimming", "Sunbathing"],
+        "image": "src/assets/popularBeaches/argentina.jpg",
+        "rating": 4.7
+      }
     ]
+    }
 }
 

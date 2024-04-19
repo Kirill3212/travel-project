@@ -1,5 +1,5 @@
 import styles from './loadingRouter.module.scss';
-import loadingRouter from '../../assets/loadingRouter.gif';
+import loadingRouter from '../../assets//general/loadingRouter.gif';
 import { Text } from '../../shared/ui';
 
 const LoadingRouter = () => {

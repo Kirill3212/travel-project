@@ -1,0 +1,47 @@
+@import '../../shared//styles/index.scss';
+
+.popularBeachCard {
+    padding: 20px;
+    width: 380px;
+    height: 620px;
+    margin-top: 20px;
+    background-color: $primary-lightgrey;
+    box-shadow: 0 0 20px  $secondary-lightgrey;
+    border-radius: $borderRadiusML;
+    @include flexColumnSpaceBetween;
+
+    // Header
+    &_heading {
+        width: 100%;
+        @include flexSpaceBetween;
+        color: $primary-purple;
+        margin-bottom: 15px;
+
+        &_rating {
+            @include flexSpaceBetween;
+            color: $secondary_darkgrey;
+            width: 55px;
+        }
+    }
+
+    // Body
+    &_body {
+
+        &_image {
+            width: 100%;
+            height: 210px;
+            border-radius: $borderRadiusS;
+            margin-bottom: 5px;
+        }
+
+        &_description {
+            margin: 10px;
+        }
+
+        &_activities {
+            background-color: $secondary_lightgrey;
+            border-radius: $borderRadiusM;
+            padding: 15px;
+        }
+    }
+}

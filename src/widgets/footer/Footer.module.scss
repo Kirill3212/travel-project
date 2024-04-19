@@ -2,7 +2,129 @@
 
 .footer{
     width: 100%;
-    padding: 20px;
     color: $primary_purple;
     border-top: 3px solid $primary_lightgrey;
+    margin-top: 80px;
+
+    &_container {
+        width: 100%;
+        min-width: 1100px;
+        padding: 60px 100px 0px 100px;
+    }
+
+    &_actionBlock {
+        @include flexSpaceAround;
+        width: 100%;
+
+        &_subsribeToEmail{
+            @include flexColumnCenter;
+            width: 360px;
+
+            &_action {
+                width: 100%;
+                @include flexSpaceBetween;
+                margin: 20px 0;
+            }
+        }
+
+        &_followUs{
+            @include flexColumnCenter;
+            width: 200px;
+
+            &_icons{
+                @include flexSpaceBetween;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+
+        &_getTheApp{
+            @include flexColumnCenter;
+            width: 230px;
+
+            &_images{
+                @include flexSpaceAround;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    &_linkBlock {
+        @include flexSpaceAround;
+        align-items: flex-start;
+        padding-bottom: 30px;
+        margin-top: 30px;
+
+        &_places {
+            @include flexColumnCenter;
+
+            &_links {
+                width: 100%;
+                @include flexColumnCenter;
+            }
+        }
+
+        &_editorial {
+            @include flexColumnCenter;
+
+            &_links {
+                width: 100%;
+                @include flexColumnCenter;
+            }
+        }
+
+        &_trips {
+            @include flexColumnCenter;
+
+            &_links {
+                width: 100%;
+                @include flexColumnCenter;
+            }
+        }
+
+        &_experiences {
+            @include flexColumnCenter;
+
+            &_links {
+                width: 100%;
+                @include flexColumnCenter;
+            }
+        }
+
+        &_community {
+            @include flexColumnCenter;
+
+            &_links {
+                width: 100%;
+                @include flexColumnCenter;
+            }
+        }
+
+        &_company {
+            @include flexColumnCenter;
+
+            &_links {
+                width: 100%;
+                @include flexColumnCenter;
+            }
+        }
+    }
+
+    &_rights {
+        @include flexColumnStart;
+        padding-left: 30px;
+        margin: 20px 0;
+    }
+
+    &_feedBack {
+        @include flexColumnCenter;
+        background-color: $primary_lightgrey;
+        padding: 10px;
+
+        &_contact {
+            width: 280px;
+            @include flexSpaceAround;
+        }
+    }
 }

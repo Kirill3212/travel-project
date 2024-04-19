@@ -24,5 +24,3 @@ export const Link: FC<LinkProps> = ({ to, children, size, color }) => {
     </LinkTo>
   );
 };
-
-export default Link;
