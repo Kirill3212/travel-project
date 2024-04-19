@@ -1,4 +1,4 @@
-@import '../../../shared//styles/index.scss';
+@import '../../shared/styles/index.scss';
 
 .userNavbar {
     width: 100%;
@@ -21,6 +21,11 @@
 
 .navLinksContainer {
     @include flexAbsoluteCenter;
+
+    .lottery {
+        margin-right: 20px;
+        cursor: pointer;
+    }
             
     .navLinks {
         @include flexAbsoluteCenter;

@@ -1,10 +1,10 @@
 import styles from './header.module.scss';
-
-import UserNavbar from '../navbars/userNavbar/UserNavbar';
-import GuestNavbar from '../navbars/guestNavbar/GuestNavbar';
+import Navbar from '../navbar/Navbar';
 
 export const Header = () => {
-  const auth = true;
-
-  return <div className={styles.header}>{auth ? <UserNavbar /> : <GuestNavbar />}</div>;
+  return (
+    <div className={styles.header}>
+      <Navbar />
+    </div>
+  );
 };
