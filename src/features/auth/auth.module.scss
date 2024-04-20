@@ -2,6 +2,7 @@
 
 .authContainer {
     @include flexSpaceBetween;
+    // min-height: 480px;
     gap: 30px;
 
     &_body {
@@ -17,6 +18,15 @@
         &_header {
             @include flexColumnCenter;
             width: 100%;
+        }
+
+        &_helperLinks {
+            @include flexColumnCenter;
+            gap: 15px;
+
+            &_noAccount {
+                @include flexSpaceBetween;
+            }
         }
     }
 
