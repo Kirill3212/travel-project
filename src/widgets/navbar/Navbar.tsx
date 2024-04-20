@@ -107,7 +107,7 @@ const Navbar = () => {
                 onClick={() => {
                   /* eslint-disable */
                   console.log('signed up');
-                   navigate(PATH_PAGE.signUp);
+                  navigate(PATH_PAGE.signUp);
                 }}
               >
                 <Text tag={'span'} size={'m'} color={'purple'} weight='bold'>

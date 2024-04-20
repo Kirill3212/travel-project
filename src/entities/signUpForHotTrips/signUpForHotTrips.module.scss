@@ -1,7 +1,7 @@
 @import '../../shared/styles/index.scss';
 
 .signUpForHotTrips {
-    background-image: linear-gradient(to right, #9017c3, #8f14cd, #8d12d6, #8912e1, #8512eb);
+    background-color: $secondary_green;
     @include flexSpaceBetween;
     color: $primary-lightgrey;
     width: 100%;

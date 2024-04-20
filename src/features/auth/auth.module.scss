@@ -1,16 +1,27 @@
 @import '../../shared/styles/index.scss';
 
 .authContainer {
-    @include flexColumnSpaceBetween;
-    gap: 20px;
-    background-color: $primary_lightgrey;
-    border-radius: $borderRadiusXL;
-    box-shadow: 0 0 20px $secondary-lightgrey;
-    padding: 30px 50px;
-    margin-top: 20px;
+    @include flexSpaceBetween;
+    gap: 30px;
 
-    &_header {
-        @include flexColumnCenter;
-        width: 100%;
+    &_body {
+        @include flexColumnSpaceBetween;
+        gap: 20px;
+        background-color: $primary_lightgrey;
+        border-radius: $borderRadiusXL;
+        box-shadow: 0 0 20px $secondary-lightgrey;
+        padding: 30px 50px;
+        margin-top: 20px;
+        margin-left: 50px;
+
+        &_header {
+            @include flexColumnCenter;
+            width: 100%;
+        }
     }
+
+    &_image {
+        width: 530px;
+    }
+
 }
