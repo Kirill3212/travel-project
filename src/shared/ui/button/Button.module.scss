@@ -3,7 +3,7 @@
 .btn {
     cursor: pointer;
     border: none;
-    // border: 2px solid black;
+    @include flexAbsoluteCenter;
 }
 
 // SIZE: xs, s, m, l
@@ -52,7 +52,7 @@
 .theme {
     &_primary {
         background-color: $primary_blue;
-        color: $primary_gold;
+        color: $primary_yellow;
         border-radius: $borderRadiusM;
         transition: background-color 300ms ease-out;
 
@@ -83,6 +83,18 @@
         &:hover,
         &:focus-visible {
             background-color: $secondary_green;
+        }
+    }
+
+    &_neutral_black {
+            background-color: black;
+            color: white;
+            border-radius: $borderRadiusM;
+            transition: background-color 300ms ease-out;
+
+        &:hover,
+        &:focus-visible {
+            background-color: rgb(43, 43, 43);
         }
     }
 }
