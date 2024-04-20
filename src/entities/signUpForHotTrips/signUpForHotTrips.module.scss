@@ -1,0 +1,31 @@
+@import '../../shared/styles/index.scss';
+
+.signUpForHotTrips {
+    background-image: linear-gradient(to right, #9017c3, #8f14cd, #8d12d6, #8912e1, #8512eb);
+    @include flexSpaceBetween;
+    color: $primary-lightgrey;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 30px 20px;
+    border-radius: $borderRadiusML;
+
+    &_text {
+        width: 430px;
+        margin-left: 20px;
+        @include flexSpaceBetween;
+    }
+
+    &_mail {
+        width: 50px;
+    }
+
+    &_button {
+        margin-right: 20px
+    }
+
+    &_arrow {
+        @include flexAbsoluteCenter;
+        margin-left: 10px;
+    }
+}

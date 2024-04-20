@@ -33,7 +33,6 @@ const Footer = () => {
                 size={'s'}
                 maxLength={100}
                 type={'input'}
-                // svg={'searchColor'}
               />
               <Button type={'submit'} size={'s'} theme={'secondary'}>
                 Subscribe
@@ -78,7 +77,6 @@ const Footer = () => {
               <Link to={''}>Latest Places</Link>
               <Link to={''}>Most Popular</Link>
               <Link to={''}>Places to Eat</Link>
-              <Link to={''}>Most Popular</Link>
               <Link to={''}>Random</Link>
               <Link to={''}>Nearby</Link>
               <Link to={''}>Add a place</Link>

@@ -8,7 +8,7 @@ interface ButtonProps {
   width?: 'auto' | 'max';
   size?: 'xs' | 's' | 'm' | 'l';
   type?: 'button' | 'submit' | 'reset';
-  theme?: 'primary' | 'secondary' | 'third';
+  theme?: 'primary' | 'secondary' | 'third' | 'neutral' | 'neutral_black';
   href?: string;
   disabled?: boolean;
   className?: string;

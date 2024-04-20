@@ -1,5 +1,5 @@
 import styles from './becomeTheMember.module.scss';
-import { Text, Button } from '../../shared/ui/';
+import { Text, Button } from '../../shared/ui';
 import becomeTheMember from '../../assets//becomeTheMember/becomeTheMember.gif';
 
 export const BecomeTheMember = () => {
