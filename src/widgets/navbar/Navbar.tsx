@@ -4,9 +4,11 @@ import lottery from '../../shared/icons/lottery.svg';
 import { PATH_PAGE } from '../../app/paths';
 import { NAV_LINKS_USER, NAV_LINKS_GUEST, NAV_LINK_DISCOVER } from './constants';
 import { Link, Text } from '../../shared/ui/index';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const auth = true;
+  const auth = false;
+  const navigate = useNavigate();
 
   return (
     <div className={styles.userNavbar}>
@@ -93,6 +95,7 @@ const Navbar = () => {
                 onClick={() => {
                   /* eslint-disable */
                   console.log('signed in');
+                  navigate(PATH_PAGE.signIn)
                 }}
               >
                 <Text tag={'span'} size={'m'} color={'purple'} weight='bold'>
@@ -104,6 +107,7 @@ const Navbar = () => {
                 onClick={() => {
                   /* eslint-disable */
                   console.log('signed up');
+                   navigate(PATH_PAGE.signUp);
                 }}
               >
                 <Text tag={'span'} size={'m'} color={'purple'} weight='bold'>

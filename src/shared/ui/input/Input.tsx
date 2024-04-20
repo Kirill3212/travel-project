@@ -10,7 +10,7 @@ interface InputProps {
   size: 's' | 'm' | 'l';
   readOnly?: boolean;
   disabled?: boolean;
-  maxLength: number;
+  maxLength?: number;
   type: string;
   svg?: string;
 }
