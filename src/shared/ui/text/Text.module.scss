@@ -28,7 +28,7 @@
         line-height: map-get($line-height, XS);
     }
 
-    // COLOR: blue, green, purple, gold, orange, white
+    // COLOR: blue, green, purple, gold, orange, white, darkGrey, lightGrey, black
     &_blue {
         color: $primary_blue;
     }
@@ -50,7 +50,19 @@
     }
 
     &_white {
+        color: $primary_white;
+    }
+
+    &_lightGrey {
         color: $primary_lightgrey;
+    }
+
+    &_darkGrey {
+        color: $secondary_darkgrey;
+    }
+
+    &_black {
+        color: $primary_black;
     }
 
     // FONT-WEIGHT: light, regular, medium, semibold, bold

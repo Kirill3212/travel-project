@@ -1,0 +1,42 @@
+@import '../../shared/styles/index.scss';
+
+.wrapper {
+    min-height: 480px;
+    @include flexCenterStart;
+}   
+
+.authContainer {
+    @include flexCenterStart;
+    gap: 30px;
+
+    &_body {
+        @include flexColumnSpaceBetween;
+        gap: 20px;
+        background-color: $primary_lightgrey;
+        border-radius: $borderRadiusXL;
+        box-shadow: 0 0 20px $secondary-lightgrey;
+        padding: 30px 50px;
+        margin-top: 20px;
+        margin-left: 50px;
+
+        &_header {
+            @include flexColumnCenter;
+            width: 100%;
+        }
+
+        &_helperLinks {
+            @include flexColumnCenter;
+            gap: 15px;
+
+            &_noAccount {
+                @include flexSpaceBetween;
+                gap: 5px;
+            }
+        }
+    }
+
+    &_image {
+        width: 530px;
+        margin-top: 50px;
+    }
+}

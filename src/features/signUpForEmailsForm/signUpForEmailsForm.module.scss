@@ -1,0 +1,32 @@
+@import '../../shared/styles/index.scss';
+
+.wrapper {
+    @include flexSpaceBetween;
+    gap: 30px;
+    margin-top: 50px;
+
+    &_image {
+        width: 500px;
+        margin-top: 30px;
+    }
+}
+
+.signUpForEmailsForm {
+    margin-top: 30px;
+    @include flexColumnCenter;
+
+    &_body {
+        @include flexColumnSpaceBetween;
+        gap: 20px;
+        background-color: $primary_lightgrey;
+        box-shadow: 0 0 20px $secondary_lightgrey;
+        margin-top: 40px;
+        padding: 20px;
+        border-radius: $borderRadiusXL;
+        width: 480px;
+
+        &_input {
+            width: 100%;
+        }
+    }
+}

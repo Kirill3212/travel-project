@@ -7,10 +7,10 @@ interface InputProps {
   placeholder?: string;
   theme: 'standart' | 'primary' | 'secondary' | 'third';
   width: 'max' | 'auto';
-  size: 's' | 'm' | 'l';
+  size?: 's' | 'm' | 'l';
   readOnly?: boolean;
   disabled?: boolean;
-  maxLength: number;
+  maxLength?: number;
   type: string;
   svg?: string;
 }

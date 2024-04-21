@@ -4,4 +4,7 @@ export const PATH_PAGE = {
   about: '/about',
   contact: '/contact',
   favorites: '/favorites',
+  signIn: '/signIn',
+  signUp: '/signUp',
+  signUpEmails: '/signupemails',
 };
