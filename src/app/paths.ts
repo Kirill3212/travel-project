@@ -6,4 +6,5 @@ export const PATH_PAGE = {
   favorites: '/favorites',
   signIn: '/signIn',
   signUp: '/signUp',
+  signUpEmails: '/signupemails',
 };

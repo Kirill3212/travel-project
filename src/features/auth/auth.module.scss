@@ -1,8 +1,12 @@
 @import '../../shared/styles/index.scss';
 
+.wrapper {
+    min-height: 480px;
+    @include flexCenterStart;
+}   
+
 .authContainer {
-    @include flexSpaceBetween;
-    // min-height: 480px;
+    @include flexCenterStart;
     gap: 30px;
 
     &_body {
@@ -26,12 +30,13 @@
 
             &_noAccount {
                 @include flexSpaceBetween;
+                gap: 5px;
             }
         }
     }
 
     &_image {
         width: 530px;
+        margin-top: 50px;
     }
-
 }

@@ -1,9 +1,13 @@
 import styles from './signUpForHotTrips.module.scss';
 import mail from '../../shared/icons/mail.svg';
 import { FaArrowRight } from 'react-icons/fa';
+import { PATH_PAGE } from '../../app/paths';
 import { Text, Button } from '../../shared/ui/index';
+import { useNavigate } from 'react-router-dom';
 
 export const SignUpForHotTrips = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.signUpForHotTrips}>
       {/* Text */}
@@ -14,11 +18,7 @@ export const SignUpForHotTrips = () => {
 
       {/* Button */}
       <div className={styles.signUpForHotTrips_button}>
-        <Button
-          size='l'
-          theme='neutral_black'
-          onClick={() => /* eslint-disable */ console.log('Sign Up Modale')}
-        >
+        <Button size='l' theme='neutral_black' onClick={() => navigate(PATH_PAGE.signUpEmails)}>
           Sign Up
           <div className={styles.signUpForHotTrips_arrow}>
             <FaArrowRight />
